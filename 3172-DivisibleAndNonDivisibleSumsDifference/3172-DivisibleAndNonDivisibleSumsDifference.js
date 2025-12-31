@@ -1,0 +1,19 @@
+// Last updated: 3/6/2026, 2:08:26 PM
+/**
+ * @param {number} n
+ * @param {number} m
+ * @return {number}
+ */
+var differenceOfSums = function(n, m) {
+    let sum1 = 0;
+    let sum2 = 0;
+    for(let i=1;i<=n;i++){
+        if(i%m===0){
+            sum1 = sum1 + i;
+        }
+        else{
+            sum2 = sum2 + i;
+        }
+    }
+    return sum2 - sum1;
+};
