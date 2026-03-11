@@ -1,4 +1,4 @@
-# Last updated: 3/11/2026, 12:09:00 PM
+# Last updated: 3/11/2026, 12:09:10 PM
 1class Solution(object):
 2    def detectCapitalUse(self, word):
 3        """
