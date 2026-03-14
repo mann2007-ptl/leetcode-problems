@@ -1,4 +1,4 @@
-// Last updated: 3/14/2026, 10:35:35 PM
+// Last updated: 3/14/2026, 10:36:12 PM
 1/**
 2 * @param {number[]} apple
 3 * @param {number[]} capacity
@@ -11,7 +11,7 @@
 10        total = total + apple[i];
 11    }
 12
-13    capacity = capacity.sort((a, b) => b - a);
+13    capacity.sort((a, b) => b - a);
 14
 15    let boxes = 0;
 16
