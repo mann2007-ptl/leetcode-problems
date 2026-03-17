@@ -1,14 +1,14 @@
-// Last updated: 3/17/2026, 5:26:51 PM
+// Last updated: 3/17/2026, 5:34:14 PM
 1class Solution {
 2public:
 3    vector<int> twoSum(vector<int>& nums, int target) {
-4        for(int i = 0; i < nums.size(); i++){
-5            for(int j = i + 1; j < nums.size(); j++){
-6                if(nums[i] + nums[j] == target){
-7                    return {i, j};  
-8                }
-9            }
-10        }
-11        return {};
+4     for(int i=0;i<nums.size();i++){
+5        for(int j=i+1;j<nums.size();j++){
+6            if(nums[i]+nums[j]==target){
+7                return{i,j};
+8            }
+9        }
+10     }
+11     return {};
 12    }
 13};
