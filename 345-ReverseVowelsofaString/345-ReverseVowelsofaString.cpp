@@ -1,4 +1,4 @@
-// Last updated: 4/9/2026, 10:17:40 AM
+// Last updated: 4/9/2026, 10:21:49 AM
 class Solution {
 public:
     bool isVowel(char c) {
