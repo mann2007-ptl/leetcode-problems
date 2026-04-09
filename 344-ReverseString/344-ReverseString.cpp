@@ -1,16 +1,14 @@
-// Last updated: 4/9/2026, 10:17:45 AM
+// Last updated: 4/9/2026, 8:27:56 PM
 1class Solution {
 2public:
 3    void reverseString(vector<char>& s) {
-4        int i=0;
-5        int j=s.size()-1;
+4       int i=0;
+5       int j=s.size()-1;
 6
-7        while(i<j){
-8            int temp = s[i];
-9            s[i]=s[j];
-10            s[j]=temp;
-11            i++;
-12            j--;
-13        }
-14    }
-15};
+7       while(i<j){
+8        swap(s[i],s[j]);
+9        i++;
+10        j--;
+11       } 
+12    }
+13};
