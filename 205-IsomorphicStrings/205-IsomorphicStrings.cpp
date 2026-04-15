@@ -1,4 +1,4 @@
-// Last updated: 4/15/2026, 11:57:16 AM
+// Last updated: 4/15/2026, 11:57:24 AM
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
