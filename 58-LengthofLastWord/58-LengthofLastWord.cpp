@@ -1,14 +1,14 @@
-// Last updated: 4/14/2026, 4:00:38 PM
+// Last updated: 5/11/2026, 9:35:39 AM
 1class Solution {
 2public:
 3    int lengthOfLastWord(string s) {
 4        int len = 0;
 5
 6        for(int i=s.length()-1;i>=0;i--){
-7            if(s[i]!= ' '){
+7            if(s[i]!=' '){
 8                len++;
 9            }
-10            else if(len > 0){
+10            else if(len>0){
 11                break;
 12            }
 13        }
