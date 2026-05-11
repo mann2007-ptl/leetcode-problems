@@ -1,4 +1,4 @@
-// Last updated: 5/11/2026, 9:35:39 AM
+// Last updated: 5/11/2026, 9:36:51 AM
 1class Solution {
 2public:
 3    int lengthOfLastWord(string s) {
