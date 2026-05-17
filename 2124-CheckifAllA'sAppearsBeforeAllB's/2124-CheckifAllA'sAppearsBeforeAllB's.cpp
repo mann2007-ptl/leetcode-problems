@@ -1,19 +1,13 @@
-// Last updated: 5/17/2026, 8:58:59 AM
+// Last updated: 5/17/2026, 9:01:53 AM
 1class Solution {
 2public:
-3    bool isHappy(int n) {
-4        
-5        while(n!=1 && n !=4){
-6           int sum = 0;
-7
-8           while(n > 0){
-9            int digit = n % 10;
-10            sum = sum + digit*digit;
-11            n=n/10;
-12           } 
-13
-14           n = sum;
-15        }
-16       return n==1;
-17    }
-18};
+3    int countOdds(int low, int high) {
+4        int count=0;
+5        for(int i=low;i<=high;i++){
+6            if(i%2!=0){
+7                count++;
+8            }
+9        }
+10        return count;
+11    }
+12};
