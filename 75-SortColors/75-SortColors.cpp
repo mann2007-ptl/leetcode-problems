@@ -1,7 +1,8 @@
-// Last updated: 5/23/2026, 10:16:53 AM
+// Last updated: 5/23/2026, 10:24:37 AM
 1class Solution {
 2public:
-3    void sortColors(vector<int>& nums) {
-4        sort(nums.begin(),nums.end());
-5    }
-6};
+3    int findKthLargest(vector<int>& nums, int k) {
+4        sort(nums.begin(), nums.end());
+5        return nums[nums.size() - k];
+6    }
+7};
