@@ -1,20 +1,24 @@
-// Last updated: 5/25/2026, 9:48:42 AM
+// Last updated: 5/25/2026, 10:00:22 AM
 1class Solution {
 2public:
-3    bool checkIfExist(vector<int>& arr) {
-4        
-5        unordered_set<int> s;
+3    int searchInsert(vector<int>& nums, int target) {
+4       int low = 0;
+5       int high = nums.size()-1;
 6
-7        for (int num : arr) {
-8
-9            if (s.count(2 * num) || 
-10               (num % 2 == 0 && s.count(num / 2))) {
-11                return true;
-12            }
+7       while(low<=high){
+8        int mid = (low + high) / 2;
+9
+10        if(nums[mid]==target){
+11            return mid;
+12        }
 13
-14            s.insert(num);
-15        }
-16
-17        return false;
-18    }
-19};
+14        else if(nums[mid]<target){
+15            low = mid + 1;
+16        }
+17        else{
+18            high = mid -1;
+19        }
+20       }
+21       return low;
+22    }
+23};
