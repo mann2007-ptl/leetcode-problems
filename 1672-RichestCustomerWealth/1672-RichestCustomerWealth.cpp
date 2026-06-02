@@ -1,4 +1,4 @@
-// Last updated: 6/2/2026, 10:01:49 AM
+// Last updated: 6/2/2026, 10:02:35 AM
 1class Solution {
 2public:
 3    int maximumWealth(vector<vector<int>>& accounts) {
