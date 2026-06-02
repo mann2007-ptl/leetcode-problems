@@ -1,26 +1,18 @@
-// Last updated: 6/2/2026, 9:18:23 PM
-1class StockSpanner {
-2    
-3public:
-4    stack<pair<int,int>> st;
-5    StockSpanner() {
-6        
-7    }
-8    
-9    int next(int price) {
-10        int span = 1;
-11
-12        while (!st.empty() && st.top().first <= price) {
-13            span += st.top().second;
-14            st.pop();
-15        }
-16
-17        st.push({price, span});
-18        return span;
-19    }
-20};
-21/**
-22 * Your StockSpanner object will be instantiated and called as such:
-23 * StockSpanner* obj = new StockSpanner();
-24 * int param_1 = obj->next(price);
-25 */
+// Last updated: 6/2/2026, 9:20:53 PM
+1class Solution {
+2public:
+3    int lengthOfLongestSubstring(string s) {
+4        int ans =0 ;
+5        for(int i =0 ; i<s.size();i++){
+6            unordered_set<char>st;
+7            for(int j=i;j<s.size();j++){
+8                if(st.find(s[j])!=st.end()){
+9                    break;
+10                }
+11                st.insert(s[j]);
+12                ans = max(ans,j-i+1);
+13            }
+14        }
+15        return ans;
+16    }
+17};
