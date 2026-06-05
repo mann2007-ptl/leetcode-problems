@@ -1,20 +1,17 @@
-// Last updated: 6/5/2026, 2:36:46 PM
+// Last updated: 6/5/2026, 2:43:54 PM
 1class Solution {
 2public:
 3    string removeDuplicates(string s) {
-4        string res = "";
+4        string result;
 5
 6        for (int i = 0; i < s.size(); i++) {
-7            if (res.size() == 0) {
-8                res.push_back(s[i]);
+7            if (!result.empty() && result.back() == s[i]) {
+8                result.pop_back();
 9            } else {
-10                if (res[res.size() - 1] == s[i]) {
-11                    res.pop_back();
-12                } else {
-13                    res.push_back(s[i]);
-14                }
-15            }
-16        }
-17        return res;
-18    }
-19};
+10                result.push_back(s[i]);
+11            }
+12        }
+13
+14        return result;
+15    }
+16};
