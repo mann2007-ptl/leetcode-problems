@@ -1,4 +1,4 @@
-// Last updated: 6/7/2026, 9:32:54 PM
+// Last updated: 6/7/2026, 9:33:18 PM
 1class Solution {
 2public:
 3    vector<int> decode(vector<int>& encoded, int first) {
