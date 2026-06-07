@@ -1,15 +1,15 @@
-// Last updated: 6/7/2026, 4:03:05 PM
+// Last updated: 6/7/2026, 4:09:03 PM
 1class Solution {
 2public:
-3    char findTheDifference(string s, string t) {
-4        int sum = 0;
-5
-6        for(char c : t){
-7            sum+=c;
-8        }
-9        for(char c : s){
-10            sum-=c;
+3    vector<int> findDisappearedNumbers(vector<int>& nums) {
+4        set<int>s (nums.begin(),nums.end());
+5        vector<int> ans;
+6
+7        for(int i=1;i<=nums.size();i++){
+8            if(s.find(i)==s.end()){
+9                ans.push_back(i);
+10            }
 11        }
-12        return char(sum);
+12        return ans;
 13    }
 14};
