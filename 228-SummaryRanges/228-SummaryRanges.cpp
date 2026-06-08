@@ -1,4 +1,4 @@
-// Last updated: 6/8/2026, 9:51:33 AM
+// Last updated: 6/8/2026, 10:08:25 AM
 1class Solution {
 2public:
 3    vector<string> summaryRanges(vector<int>& nums) {
