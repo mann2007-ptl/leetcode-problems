@@ -1,24 +1,21 @@
-// Last updated: 6/15/2026, 11:36:01 AM
+// Last updated: 6/15/2026, 11:38:42 AM
 1class Solution {
 2public:
 3    int sumOfUnique(vector<int>& nums) {
-4        unordered_map<int, int> obj;
-5        int sum = 0;
-6
-7        for (int num : nums) {
-8            if (obj.find(num) == obj.end()) {
-9                obj[num] = 1;
-10            } else {
-11                obj[num]++;
-12            }
-13        }
-14
-15        for (auto it : obj) {
-16            if (it.second == 1) {
-17                sum += it.first;
-18            }
-19        }
-20
-21        return sum;
-22    }
-23};
+4        vector<int> freq(101, 0);
+5
+6        for (int num : nums) {
+7            freq[num]++;
+8        }
+9
+10        int sum = 0;
+11
+12        for (int num : nums) {
+13            if (freq[num] == 1) {
+14                sum += num;
+15            }
+16        }
+17
+18        return sum;
+19    }
+20};
